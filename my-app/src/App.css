@@ -1,0 +1,71 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  max-width: 100%;
+}
+
+.app-header {
+  background-color: #e7e7e7;
+  color: #333;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+.topics-header {
+  padding: 20px;
+  text-align: left;
+  
+  border-bottom: 1px solid #ddd;
+}
+  
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-items: center;
+  height: calc(100vh - 60px);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  padding-top: 60px;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.add-item {
+  background-color: #f7f7f7;
+  color: #333;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.add-item h2 {
+  font-size: 24px;
+  margin: 0;
+}
